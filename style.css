@@ -228,3 +228,22 @@ header img{
     border-radius: 20px;
     cursor: pointer;
 }
+.job-more:hover {
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+}
+.join {
+    width: 100%;
+    height: 350px;
+    background-image: url(Images/picture2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--whiteColor);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    align-items: center;
+    position: relative;
+}
