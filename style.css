@@ -59,3 +59,23 @@ h1 {
     background-color: var(--whiteColor);
     cursor: pointer;
 }
+header {
+    width: 100%;
+    height: 80%;
+        /* look for a good background image */
+    background-image: url("");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.header-title {
+    position: absolute;
+    top: 7rem;
+    left: 3rem;
+    letter-spacing: 3;
+    font-weight: bolder;
+    font-size: 52px;
+    color: var(--whiteColor);
+    text-shadow: 4px 2px 0px rgba(0, 0, 0, 0.2);
+}
