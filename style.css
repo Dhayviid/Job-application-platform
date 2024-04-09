@@ -117,3 +117,40 @@ header img{
     color: var(--whiteColor);
     cursor: pointer;
 } 
+.filter-box {
+    width: 100%;
+    height: auto;
+    font-size: 0.8rem;
+    width: 60%;
+    min-width: 300px;
+    margin: auto;
+}
+.filter-dropdown {
+    width: 100%;
+    border-bottom: 1px solid var(--labelColor);
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+}
+.filter-select {
+    border: none;
+    padding: 0.2rem;
+}
+.filter-select:hover {
+    background: var(--greyColor);
+}
+.filter-chosen {
+    width: 100%;
+    padding: 0.3rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.chosen-card {
+    background: var(--primaryColor);
+    padding: 0.2rem 0.5rem;
+    border-radius: 20px;
+    color: var(--whiteColor);
+    cursor: pointer;
+}

@@ -12,73 +12,180 @@
     <title>Job Application Platform</title>
 </head>
 <body>
-   <!-- navbar  -->
-   <nav class="navbar">
-    <h2 class="navbar-logo"><a href="#">Phoenix</a></h2>
-    <div class="navbar-menu">
-        <a href="#jobs">Jobs</a>
-        <a href="#companies">Companies</a>
-        <a href="#testimonial">Testimonial</a>
-        <a href="#blog">Blog</a>
-        <a href="#">Sign in</a>
-    </div>
-    <div class="menu-toggle">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </div>
-   </nav>
-   <!-- header -->
-   <header>
-    <h1 class="header-title">
-        FIND YOUR <br> <span>PERFECT JOB</span> <br> EASILY
-    </h1>
-    <img src="Images/Picture1.jpg" alt="background picture">
-   </header>
-   <!-- search -->
-   <div class="search-wrapper">
-    <div class="search-box">
-        <div class="search-card">
-            <input type="text" class="search-input" placeholder="Job title or keywords">
-            <button class="search-button">Search</button>
+    <!-- navbar  -->
+    <nav class="navbar">
+        <h2 class="navbar-logo"><a href="#">Phoenix</a></h2>
+        <div class="navbar-menu">
+            <a href="#jobs">Jobs</a>
+            <a href="#companies">Companies</a>
+            <a href="#testimonial">Testimonial</a>
+            <a href="#blog">Blog</a>
+            <a href="#">Sign in</a>
+        </div>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <!-- header -->
+    <header>
+        <h1 class="header-title">
+            FIND YOUR <br> <span>PERFECT JOB</span> <br> EASILY
+        </h1>
+        <img src="Images/picture2.jpg" alt="background picture">
+    </header>
+    <!-- search -->
+    <div class="search-wrapper">
+        <div class="search-box">
+            <div class="search-card">
+                <input type="text" class="search-input" placeholder="Job title or keywords">
+                <button class="search-button">Search</button>
+            </div>
         </div>
     </div>
-   </div>
-   <!-- filter box -->
-   <div class="filter-box">
-    <div class="filter-dropdown">
-        <select name="job-level" id="job-level" class="filter-select">
-            <option>Job Level</option>
-            <option>Entry</option>
-            <option>Mid-senior</option>
-            <option>Director</option>
-        </select>
-        <select name="job-function" id="job-function" class="filter-select">
-            <option>Job Function</option>
-            <option>IT</option>
-            <option>Management</option>
-            <option>Education</option>
-        </select>
-        <select name="employment" id="employment" class="filter-select">
-            <option>Employment Type</option>
-            <option>Internship</option>
-            <option>Part Time</option>
-            <option>Full Time</option>
-        </select>
-        <select name="location" id="location" class="filter-select">
-            <option>Locations</option>
-            <option>Remote</option>
-            <option>US</option>
-            <option>UK</option>
-            <option>Africa</option>
-        </select>
-        <select name="education" id="education" class="filter-select">
-            <option>Education</option>
-            <option>High School</option>
-            <option>Bachelor's Degree</option>
-            <option>Master's Degree</option>
-        </select>
+    <!-- filter box -->
+    <div class="filter-box">
+        <div class="filter-dropdown">
+            <select name="job-level" id="job-level" class="filter-select">
+                <option>Job Level</option>
+                <option>Entry</option>
+                <option>Mid-senior</option>
+                <option>Director</option>
+            </select>
+            <select name="job-function" id="job-function" class="filter-select">
+                <option>Job Function</option>
+                <option>IT</option>
+                <option>Management</option>
+                <option>Education</option>
+            </select>
+            <select name="employment" id="employment" class="filter-select">
+                <option>Employment Type</option>
+                <option>Internship</option>
+                <option>Part Time</option>
+                <option>Full Time</option>
+            </select>
+            <select name="location" id="location" class="filter-select">
+                <option>Locations</option>
+                <option>Remote</option>
+                <option>US</option>
+                <option>UK</option>
+                <option>Africa</option>
+            </select>
+            <select name="education" id="education" class="filter-select">
+                <option>Education</option>
+                <option>High School</option>
+                <option>Bachelor's Degree</option>
+                <option>Master's Degree</option>
+            </select>
+        </div>
+        <div class="filter-chosen">
+            <div class="chosen-card">
+                Remote <i class="fas fa-times-circle"></i>
+            </div>
+            <div class="chosen-card">
+                Full time <i class="fas fa-times-circle"></i>
+            </div>
+            <div class="chosen-card">
+                Financial Tech <i class="fas fa-times-circle"></i>
+            </div>
+            <div class="chosen-card">
+                Entry Level <i class="fas fa-times-circle"></i>
+            </div>
+        </div>
     </div>
-   </div>
-</body>
+    <!-- job listing -->
+    <section class="job-list" id="jobs">
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="Images/tesla-svgrepo-com.svg">
+                <div class="job-detail">
+                    <h4>Tesla</h4>
+                    <h3>Mechanical Engineer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil nostrum obcaecati quos harum accusantium iusto modi, saepe odit doloribus et sunt consequatur adipisci ipsam quam dolor, quod officiis, inventore unde!</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a  class="label-a" href="#">HTML</a>
+                <a  class="label-b" href="#">CSS</a>
+                <a  class="label-c" href="#">JavaScript</a>
+            </div>
+            <div class="job-posted">
+                Posted 2 mins ago
+            </div>
+        </div>
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="Images/ebay-svgrepo-com.svg">
+                <div class="job-detail">
+                    <h4>Ebay</h4>
+                    <h3>Business Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil nostrum obcaecati quos harum accusantium iusto modi, saepe odit doloribus et sunt consequatur adipisci ipsam quam dolor, quod officiis, inventore unde!</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a  class="label-a" href="#">HTML</a>
+                <a  class="label-b" href="#">CSS</a>
+                <a  class="label-c" href="#">JavaScript</a>
+            </div>
+            <div class="job-posted">
+                Posted 2 mins ago
+            </div>
+        </div>
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="Images/tiktok-svgrepo-com.svg">
+                <div class="job-detail">
+                    <h4>Tiktok</h4>
+                    <h3>Digital Marketing</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil nostrum obcaecati quos harum accusantium iusto modi, saepe odit doloribus et sunt consequatur adipisci ipsam quam dolor, quod officiis, inventore unde!</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a  class="label-a" href="#">HTML</a>
+                <a  class="label-b" href="#">CSS</a>
+                <a  class="label-c" href="#">JavaScript</a>
+            </div>
+            <div class="job-posted">
+                Posted 2 mins ago
+            </div>
+        </div>
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="Images/youtube-color-svgrepo-com.svg">
+                <div class="job-detail">
+                    <h4>Youtube</h4>
+                    <h3>UI/UX Designer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil nostrum obcaecati quos harum accusantium iusto modi, saepe odit doloribus et sunt consequatur adipisci ipsam quam dolor, quod officiis, inventore unde!</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a  class="label-a" href="#">HTML</a>
+                <a  class="label-b" href="#">CSS</a>
+                <a  class="label-c" href="#">JavaScript</a>
+            </div>
+            <div class="job-posted">
+                Posted 23 minutes ago
+            </div>
+        </div>
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="Images/amazon-color-svgrepo-com.svg">
+                <div class="job-detail">
+                    <h4>Amazon</h4>
+                    <h3>Software Engineer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil nostrum obcaecati quos harum accusantium iusto modi, saepe odit doloribus et sunt consequatur adipisci ipsam quam dolor, quod officiis, inventore unde!</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a  class="label-a" href="#">HTML</a>
+                <a  class="label-b" href="#">CSS</a>
+                <a  class="label-c" href="#">JavaScript</a>
+            </div>
+            <div class="job-posted">
+                Posted an hour ago
+            </div>
+        </div>
+    </section>
+ </body>
 </html>
