@@ -67,7 +67,7 @@ header img{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* position: relative; */
+    position: relative;
 }
  .header-title {
     position: absolute;
@@ -246,4 +246,40 @@ header img{
     padding: 1rem 3rem;
     align-items: center;
     position: relative;
+}
+.join::before {
+    content: "";
+    position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: linear-gradient(180deg, rgba(0,85,177,0.6)0%, rgba(0,122,255,0.5)100%),
+   linear-gradient(180deg, rgba(0,122,255,0.65)0%, transparent 100%);
+   z-index: 1;
+}
+.join-detail {
+    min-width: 280px;
+    width: 50%;
+    z-index: 2;
+    margin-bottom: 1rem;
+}
+.join-detail h1 {
+    font-size: 36px;
+    letter-spacing: 2;
+}
+.join-button {
+    width: 200px;
+    padding: 1rem;
+    border: none;
+    color: var(--blackColor);
+    background-color: var(--yellowColor);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 2;
+    cursor: pointer;
+}
+.join-button:hover {
+    background: transparent;
+    border: 2px solid var(--yellowColor);
+    color: var(--yellowColor);
 }
