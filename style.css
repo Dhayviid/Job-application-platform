@@ -359,12 +359,13 @@ header img{
     color: var(--blackColor);
 }
 .swiper-slide i {
-    font-size: 40px;
+    font-size: 35px;
     color: var(--yellowColor);
     margin-bottom: 1rem;
 }
 .swiper-slide h3 {
     font-family: 'Noto Serif', serif;
+    font-size: 17px;
 }
 .testimonial-pic {
     padding: 1rem;
