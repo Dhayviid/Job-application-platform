@@ -16,8 +16,16 @@
 }
 .container {
     justify-content: center;
-    padding: 40px;
+    padding: 100px;
     display: flex;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    overflow: hidden;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
 }
 .btn
 {
