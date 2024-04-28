@@ -88,6 +88,14 @@ form p a{
     cursor: pointer;
     transition: background 1s;
 }
+.btn-field button a {
+    text-decoration: none;
+    color: black;
+}
+.btn-field button a:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
 /* .btn-field a {
     flex-basis: 48%;
     background: #3c00a0c0;
