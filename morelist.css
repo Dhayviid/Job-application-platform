@@ -1,0 +1,149 @@
+:root {
+    --primaryColor: #0076de;
+    --whiteColor:#fff;
+    --blackColor:#333;
+    --greyColor:#f6f8fa;
+    --labelColor:#64b1f5;
+    --yellowColor:#ffd723;    
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Nunito', sans-serif;
+}
+body {
+    width: 100%;
+    height: auto;
+}
+h1 {
+    line-height: 1.5;
+}
+.navbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem 2.5rem;
+    z-index: 10;
+    /* color: var(--whiteColor);
+    background: transparent; */
+    color: var(--blackColor);
+    background: var(--blackColor);
+}
+.navbar-logo a {
+    letter-spacing: 2.5;
+    text-decoration: none;
+    color: var(--whiteColor);
+}
+.navbar-menu {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-menu a {
+    color: var(--whiteColor);
+    text-decoration: none;
+}
+.menu-toggle {
+    display: none;
+}
+.menu-toggle .bar {
+    width: 15px;
+    height: 2px;
+    margin: 3px auto;
+    transition: all 0.3 ease-in-out;
+    background-color: var(--whiteColor);
+    cursor: pointer;
+}
+.job-list {
+    margin: 5%;
+    padding: 1rem;
+    background-color: var(--greyColor);
+}
+.job-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 1rem;
+    min-height: 100px;
+    align-items: center;
+    background-color: var(--whiteColor);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    cursor: pointer;
+}
+.job-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.job-detail a {
+    text-decoration: none;
+    color: var(--blackColor);
+}
+.job-name {
+    display: flex;
+}
+.job-profile {
+    width: 60px;
+    height: 60px;
+    margin: 0.5rem;
+}
+.job-detail {
+    padding: 0 10px;
+}
+.job-detail h4 {
+    color: var(--primaryColor);
+    font-size: 0.9rem;
+}
+.job-detail p {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.job-label {
+    display: flex;
+    flex-wrap: wrap;
+}
+.job-label a {
+    padding: 0 1rem;
+    margin: 0.2rem;
+    color: var(--whiteColor);
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+.label-a {
+    background-color: var(--yellowColor);
+}
+.label-b {
+    background-color: var(--primaryColor);
+}
+.label-c {
+    background-color: var(--blackColor);
+}
+.job-posted {
+    font-size: 0.8rem;
+}
+.job-more {
+    display: block;
+    padding: 0.3rem 2rem;
+    margin: 20px auto;
+    width: 250px;
+    background-color: transparent;
+    color: var(--primaryColor);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.job-more:hover {
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+}
+.job-more a {
+    text-decoration: none;
+    color: var(--blackColor);
+}
