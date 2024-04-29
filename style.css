@@ -68,7 +68,7 @@ header img{
     background-repeat: no-repeat;
     background-size: cover;
 }
- .header-title {
+.header-title {
     position: absolute;
     top: 7rem;
     left: 3rem;
@@ -116,6 +116,9 @@ header img{
     color: var(--whiteColor);
     cursor: pointer;
 } 
+.search-button:hover {
+    transform: scale(1.05);
+}
 .filter-box {
     width: 100%;
     height: auto;
@@ -152,6 +155,9 @@ header img{
     border-radius: 20px;
     color: var(--whiteColor);
     cursor: pointer;
+}
+.chosen-card:hover {
+    transform: scale(1.05);
 }
 .job-list {
     margin: 5%;
