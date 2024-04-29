@@ -241,6 +241,10 @@ header img{
     background-color: var(--primaryColor);
     color: var(--whiteColor);
 }
+.job-more a {
+    text-decoration: none;
+    color: var(--blackColor);
+}
 .join {
     width: 100%;
     height: 350px;
