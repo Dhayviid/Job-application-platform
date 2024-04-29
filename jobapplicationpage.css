@@ -14,6 +14,9 @@
     outline: none;
     font-family: 'Nunito', sans-serif;
 }
+.welcome-message {
+    color: var(--greyColor);
+}
 .container {
     justify-content: center;
     padding: 100px;

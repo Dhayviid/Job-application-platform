@@ -1,52 +1,52 @@
-    // Get the input element and button
-    const searchInput = document.querySelector('.search-input');
-    const searchButton = document.querySelector('.search-button');
+// Get the input element and button
+const searchInput = document.querySelector('.search-input');
+const searchButton = document.querySelector('.search-button');
 
-    // Add click event listener to the search button
-    searchButton.addEventListener('click', function() {
-        const searchTerm = searchInput.value.trim().toLowerCase(); // Get the search term
+// Add click event listener to the search button
+searchButton.addEventListener('click', function() {
+    const searchTerm = searchInput.value.trim().toLowerCase(); // Get the search term
 
-        // Get all job cards
-        const jobCards = document.querySelectorAll('.job-card');
+    // Get all job cards
+    const jobCards = document.querySelectorAll('.job-card');
 
-        // Loop through each job card
-        jobCards.forEach(function(card) {
-            const jobTitle = card.querySelector('h3').textContent.toLowerCase(); // Get the job title
+    // Loop through each job card
+    jobCards.forEach(function(card) {
+        const jobTitle = card.querySelector('h3').textContent.toLowerCase(); // Get the job title
 
-            // Check if the job title contains the search term
-            if (jobTitle.includes(searchTerm)) {
-                card.style.display = 'block'; // Show the job card if it matches
-            } else {
-                card.style.display = 'none'; // Hide the job card if it doesn't match
-            }
-        });
+        // Check if the job title contains the search term
+        if (jobTitle.includes(searchTerm)) {
+            card.style.display = 'block'; // Show the job card if it matches
+        } else {
+            card.style.display = 'none'; // Hide the job card if it doesn't match
+        }
     });
+});
 
-    document.addEventListener('DOMContentLoaded', function() {
-        // Add click event listener to the parent element of chosen cards
-        const filterChosen = document.querySelector('.filter-chosen');
+document.addEventListener('DOMContentLoaded', function() {
+    // Add click event listener to the parent element of chosen cards
+    const filterChosen = document.querySelector('.filter-chosen');
 
-        filterChosen.addEventListener('click', function(event) {
-            // Check if the clicked element is a chosen card
-            if (event.target.classList.contains('chosen-card')) {
-                // Extract the text from the chosen card
-                const optionText = event.target.textContent.trim();
-                
-                // Find the corresponding select element
-                const filterSelect = event.target.closest('.filter-box').querySelector('.filter-select');
-                
-                // Create a new option element
-                const option = document.createElement('option');
-                option.textContent = optionText;
-                
-                // Add the option to the select element
-                filterSelect.appendChild(option);
-                
-                // Remove the chosen card
-                event.target.remove();
-            }
-        });
+    filterChosen.addEventListener('click', function(event) {
+        // Check if the clicked element is a chosen card
+        if (event.target.classList.contains('chosen-card')) {
+            // Extract the text from the chosen card
+            const optionText = event.target.textContent.trim();
+            
+            // Find the corresponding select element
+            const filterSelect = event.target.closest('.filter-box').querySelector('.filter-select');
+            
+            // Create a new option element
+            const option = document.createElement('option');
+            option.textContent = optionText;
+            
+            // Add the option to the select element
+            filterSelect.appendChild(option);
+            
+            // Remove the chosen card
+            event.target.remove();
+        }
     });
+});
 
 
 // change navbar color
